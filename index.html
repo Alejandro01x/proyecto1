@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Intermix - Inicio</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/slicebox.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+	<script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilos1.css">
+	<link rel="stylesheet" href="font-awesome.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+	<header>
+		<div id="buscador">
+		    <ul style="text-align: right;">
+		    <div id="textobusca"><input type="text" name="buscar"></div></ul>	
+		</div>
+	</header>
+        <div id="general">
+        	<nav class="navegacion">
+			<ul class="menu" style="text-align: right;">	
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="Intermix - Nosotros.html">Nosotros</a></li>
+				<li><a href="#">Servicios</a>
+					<ul class="submenu">
+						<li><a href="#">Soluciones multimedia</a></li>
+						<li><a href="#">Consultoria Informatica</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Soluciones</a></li>
+				<li><a href="#">Clientes</a></li>
+				<li><a href="#">Contactenos</a></li>
+			</ul>
+			<div id="img"><img src="imagenes/logo.png"></div>
+
+		    </nav>
+		   
+		   <div id="imagenes">
+		   	<div class="container">	
+			<div class="wrapper">
+				<ul id="sb-slider" class="sb-slider">
+					<li>
+						<a href="#" target="_blank"><img src="01.jpg" alt="image1"/></a>
+						<div class="sb-description">
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="02.jpg" alt="image1"/></a>
+						<div class="sb-description">
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="03.jpg" alt="image1"/></a>
+						<div class="sb-description">
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="04.png" alt="image1"/></a>
+						<div class="sb-description">
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="05.jpg" alt="image1"/></a>
+						<div class="sb-description">
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="06.jpg" alt="image1"/></a>
+						<div class="sb-description">
+						</div>
+					</li>
+				</ul>
+
+				<div id="shadow" class="shadow"></div>
+
+				<div id="nav-arrows" class="nav-arrows">
+					<a href="#">Next</a>
+					<a href="#">Previous</a>
+				</div>
+
+			</div><!-- /wrapper -->
+		</div>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slicebox.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ).hide(),
+						$shadow = $( '#shadow' ).hide(),
+						slicebox = $( '#sb-slider' ).slicebox( {
+							onReady : function() {
+
+								$navArrows.show();
+								$shadow.show();
+
+							},
+							orientation : 'r',
+							cuboidsRandom : true
+						} ),
+						
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':first' ).on( 'click', function() {
+
+								slicebox.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':last' ).on( 'click', function() {
+								
+								slicebox.previous();
+								return false;
+
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+			});
+		</script>
+
+		   
+		   </div>
+		   <div id="gif">
+		   <div id="img2"><img src="bienvenidos.jpg" heigt="960"; width="150";></div>
+		   </div>
+		   <div id="cuadros">
+		   <div id="cuadro1">
+		   	<center><img src="imagenes/internet.png"></center>
+		   	<h5>Aplicaciones para internet
+
+		   </div>
+		   <div id="cuadro2">
+		   <img src="imagenes/professional.jpg">
+		   <img src="imagenes/lite.jpg">
+		   <h5>
+		   	bizness profesional bizness lite 
+		   </div>
+		   <div id="pestañas">
+		   	
+		   	<div class="wrap">
+		<ul class="tabs">
+			<li><a href="#tab1"><span class="tab-text">Intermix</span></a></li>
+			<li><a href="#tab2"><span class="tab-text">Nosotros</span></a></li>
+			<li><a href="#tab3"><span class="tab-text">Mision</span></a></li>
+		</ul>
+
+		<div class="secciones">
+			<article id="tab1">
+				<h5>Es un proveedor de soluciones informáticas, y queremos formar parte del equipo de trabajo de su empresa, para ayudarle a diseñar, implementar y poner en marcha la herramienta mas adecuada a sus necesidades y objetivos que le permitan crecer 
+			</article>
+			<article id="tab2">
+				<h5>En Intermix ante todo sabemos de negocios, y en base a este conocimiento buscamos la mejor solución a los problemas que presentan los procesos administrativos de las empresas, con el apoyo de las herramientas que ofrece la tecnología informática.
+				Dependiendo del tipo de actividad a la que se dedique su empresa, a su tamaño y objetivos, esta deberá enfrentar ciertos problemas propios del negocio para alcanzar sus propósitos y también tendrá la posibilidad de aprovechar determinadas oportunidades que le permitan crecer. Por lo tanto cada empresa requiere de una solución informática particular que le ayude a enfrentar eficazmente sus problemas y a aprovechar las oportunidades, y esta es nuestra tarea.
+			</article>
+			<article id="tab3">			
+				<h5>"Ofrecer soluciones informáticas fáciles de usar y de alta tecnología que contribuyan al crecimiento de las empresas y sean un verdadero apoyo en la toma de decisiones"
+		</div>
+	</div>
+		   </div>
+		   </div>
+		   <div id="cuadro3">
+		   	<center><img src="imagenes/tvcable.jpg"></center>
+		   
+		   <h5>GRUPO TVCABLE, el mayor grupo privado del Ecuador en telecomunicaciones y entretenimiento que brinda servicios de excelencia con calidad, innovación, responsabilidad y contenido.
+		   </div>
+		   <div id="contactos">
+		   	<h5><p><center>Contactos</center></p><br>
+            Dirección:Av. Mariana de Jesús OE378 
+                     y Antonio de Ulloa
+                         Ed. Mariana Plaza Of. 4C
+                         Quito - Ecuador<br>
+                         Teléfono:   (593 2) 6021 521
+                         (593 2) 6021 521<br>
+                         Celular:      (593 9) 9972 8927<br>
+                         E-Mail:        info@intermix.com.ec
+		   </div>
+		</div>
+        <footer>
+        	<br>
+        	<div class="letras"><center>Copyright © 2014 Intermix. Todos los derechos reservados.</center>
+<p><center>Intermix S.A., Quito - Ecuador, Av. Mariana de Jesús OE378 y Antonio de Ulloa Ed. Mariana Plaza, Piso 4 Oficina 4C, Teléfono: 026021521 - 026021522 - 0999728927</center> </p></div>
+        </footer>
+
+
+
+	
+</body>
+</html>
